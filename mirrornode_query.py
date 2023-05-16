@@ -93,7 +93,7 @@ df = df[cols]
 csv_file = args.account_id + '.csv'
 df.to_csv(csv_file, index=False)
 
-print(f'CSV file has been saved as {csv_file}')
+print(f'Unfiltered CSV file has been saved as {csv_file}')
 
 # Filter csv based on match_string if provided
 if args.match_string:

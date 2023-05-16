@@ -36,4 +36,14 @@ The script creates a CSV file with the following columns:
 - account
 - amount
 
+## Examples
 
+Get the last 120 transactions of account 0.0.70 in CSV format.
+```
+python mirrornode_query.py 0.0.70 --max_limit 120
+```
+
+Get the last 200 transactions of account 0.0.800 filtered to only see account 0.0.4
+```
+python mirrornode_query.py 0.0.800 --max_limit 200 --filter_account 0.0.4
+```
